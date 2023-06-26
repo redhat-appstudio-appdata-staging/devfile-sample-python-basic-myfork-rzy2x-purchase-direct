@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-myfork
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/bkorren-tenant/devfile-sample-python-basic-myfork/devfile-sample-python-basic-myfork@sha256:b0f76b0b6cc5f2ae761e0543f6857f011e0e6a9f513f6b8b9a7bc2298260d385
+        name: my-python
+        resources: {}
+status: {}
